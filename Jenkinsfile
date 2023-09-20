@@ -1,13 +1,13 @@
 pipeline {
     agent {
 	  lebal {
-	     lebal " master ssh connect " 
+	     lebal "shubham" 
 		      customWorkpace " /root/jenkins "
 		    }
 		}
 	
     stages {
-        stage ("directoryy ") {
+        stage ("directory") {
 		   step {
                echo "hello world "
                 sh "mkdir dir" 				
@@ -15,4 +15,5 @@ pipeline {
 			}
 		}
  }
+	      
 	      
