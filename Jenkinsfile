@@ -2,18 +2,18 @@ pipeline {
     agent {
 	  label {
 	     label "shubham" 
-		      customWorkpace "/root/jenkins "
+		      customWorkspace "/root/jenkins "
 		    }
 		}
 	
     stages {
         stage ("dir") {
-		   step {
+		   steps {
                echo "hello world "
                 sh "mkdir dir" 				
+					}
+			}
 		}
-	}
-    }
  }
-	          
+	                
 	      
